@@ -44,7 +44,7 @@ export default function Dashboard() {
   const [isSimulating, setIsSimulating] = useState(false);
   const [wsConnected, setWsConnected] = useState(false);
 
-  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://nids-project-bbsy.onrender.com/api/v1';
   const WS_BASE_URL = import.meta.env.VITE_WS_URL || (
     API_BASE_URL.startsWith('https://') 
       ? API_BASE_URL.replace('https://', 'wss://').replace('/api/v1', '') 
